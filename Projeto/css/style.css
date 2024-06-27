@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6e7fdb, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(to bottom, #6e7fdb, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url('path-to-your-background-image.png'); /* Substitua pelo caminho da imagem de fundo */
+    background-size: cover;
+    background-position: bottom;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.content .visitor {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form .forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+form .sign-in {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.sign-up-text {
+    margin-top: 20px;
+    color: #4a4a4a;
+}
+
+.sign-up-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
